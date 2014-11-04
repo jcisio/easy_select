@@ -16,7 +16,7 @@
   font-style: italic;
 }
 .easy-select input {
-  /*display: none;*/
+  display: none;
 }
 .easy-select label {
   cursor: pointer;
