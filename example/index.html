@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<select class="drilldown" multiple="true" style="height:200px"> 
+<select class="drilldown" multiple="true" style="height:200px">
 <option value="">---------</option> 
 <option value="fruit" selected>Fruit</option>
 <option value="apple"> - Apple</option>
@@ -15,12 +15,16 @@
 <option value="palm"> - Palm</option>
 </select>
 
+<button class="toggle">Toggle <em>SELECT</em> element</button>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="../lib/js/easy-select.js"></script>
 
 <script type="text/javascript">
-$('.drilldown').easySelect();
+    $('.drilldown').easySelect();
+    $('.toggle').click(function() {
+        $('.drilldown').toggle();
+    });
 </script>
 
 </body>
